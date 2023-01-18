@@ -139,22 +139,23 @@ nav li a:hover {
 .column {
     text-align: center;
     width: 400px;
+} .column img {
+    float: right;
+    width: 50px;
+} .column h2 {
+    margin: 10px 10px;
+    float: left;
 }
+
 
 .skills-left {
     background-color: red;
 }
-
 .skills-center {
     background-color: green;
 }
-
 .skills-right {
     background-color: blue;
-}
-
-.column img {
-    width: 50px;
 }
 
 /* MEDIA TAGS */
