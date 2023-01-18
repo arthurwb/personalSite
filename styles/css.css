@@ -129,14 +129,59 @@ nav li a:hover {
     margin-right: 0;
 }
 
+/* SKILLS PANEL */ 
+.skills-container {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    text-align: center;
+    width: 400px;
+}
+
+.skills-left {
+    background-color: red;
+}
+
+.skills-center {
+    background-color: green;
+}
+
+.skills-right {
+    background-color: blue;
+}
+
+.column img {
+    width: 50px;
+}
+
 /* MEDIA TAGS */
+@media screen and (max-width: 1200px) {
+    /* INFO PANEL */
+    .info-container {
+        padding-top: 30px;
+        height: auto;
+    }
+
+    .info {
+    }
+
+    .professionalPicture img {
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 992px) {
+    /* INFO PANEL */
     .professionalPicture {
         display: none;
     }
 }
 
 @media screen and (max-width: 646px) {
+    /* INFO PANEL */
     nav h1 {
         margin-right: 0;
     }
@@ -152,6 +197,7 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 575px) {
+    /* INFO PANEL */
     nav {
         height: auto;
     }
