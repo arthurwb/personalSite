@@ -3,82 +3,98 @@
     font-family: ubuntu;
     src: url('Fonts/Ubuntu/Ubuntu-Regular.ttf');
 }
+@font-face {
+    font-family: ubuntu-bold;
+    src: url('Fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
 
 body {
     margin: 0;
     font-family: ubuntu;
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(226, 226, 226);
+    height: 8000px;
 }
 
 /* NAVBAR */
 nav {
+    width: 100%;
+    position: fixed;
     margin: 0;
     padding: 0;
     background-color: #333;
+    height: 40px;
+}
+
+.nav-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 nav h1 {
     font-size: 20px;
     text-align: center;
     color: white;
+    width: auto;
 
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 5px 10px;
-    margin: auto;
-    display: block;
-    float: left;
 }
 
 nav ul {
     margin: 0;
     list-style-type: none;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
   
 nav li {
-    float: left;
     background-color: rgb(255, 115, 0);
+    width: 120px;
     margin-right: 10px;
 }
   
 nav li a {
     font-size: 20px;
     display: block;
-    color: white;
+    background-color: white;
+    color: #111;
     text-align: center;
     text-decoration: none;
-    padding: 5px 10px
 }
   
 nav li a:hover {
     background-color: #111;
-    color: rgb(255, 115, 0);
+    color: rgb(181, 181, 181);
+}
+
+.nav-bottomBar {
+    height: 10px;
+    background-color: #111;
 }
 
 /* INFO PANEL */
 .info-container {
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: rgb(220, 220, 220);
+    padding-top: 40px;
+    padding-right: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
 
-    height: 400px;
-}
-
-.info-topBar {
-    width: 100%;
-    height: 10px;
-    background-color: #111;
+    height: 350px;
 }
 
 .info {
     display: block;
     padding: 20px;
-    width: 70%;
     
     float: left;
-    background-color: rgb(220, 220, 220);
 }
 
 .info h1 {
+    font-family: ubuntu-bold;
     margin-top: 5px;
     margin-bottom: 0;
 }
@@ -86,13 +102,13 @@ nav li a:hover {
 .info h5 {
     margin-top: 0;
     margin-bottom: 5px;
-    color: rgb(202, 131, 0);
+    color: rgb(226, 144, 13);
 }
 
 .info h3 {
     margin-top: 10px;
     font-style: italic;
-    color: rgb(63, 181, 20);
+    color: rgb(73, 217, 20);
 }
 
 .info p {
@@ -111,4 +127,55 @@ nav li a:hover {
     float: right;
     display: block;
     margin-right: 0;
+}
+
+/* MEDIA TAGS */
+@media screen and (max-width: 992px) {
+    .professionalPicture {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 646px) {
+    nav h1 {
+        margin-right: 0;
+    }
+
+    nav li {
+        width: auto;
+    }
+
+    nav li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav {
+        height: auto;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    nav li a {
+        margin-bottom: 5px;
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    .info-container {
+        padding-top: 30px;
+        height: auto;
+    }
 }
