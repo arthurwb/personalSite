@@ -14,7 +14,7 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: ubuntu-bold;
 }
 
@@ -58,6 +58,7 @@ nav li {
     background-color: rgb(255, 115, 0);
     width: 120px;
     margin-right: 10px;
+    border-radius: 50px;
 }
   
 nav li a {
@@ -67,6 +68,7 @@ nav li a {
     color: #111;
     text-align: center;
     text-decoration: none;
+    border-radius: 50px;
 }
   
 nav li a:hover {
@@ -160,6 +162,7 @@ nav li a:hover {
 .skills-left {
     background: rgb(226,226,226);
     background: linear-gradient(0deg, rgba(226,226,226,1) 50%, rgba(253,187,45,1) 100%); 
+    border-top-left-radius: 50px;
 }
 .skills-center {
     background: rgb(226,226,226);
@@ -168,6 +171,54 @@ nav li a:hover {
 .skills-right {
     background: rgb(226,226,226);
     background: linear-gradient(0deg, rgba(226,226,226,1) 50%, rgba(253,187,45,1) 100%); 
+    border-top-right-radius: 50px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+/* HOBBIES PANEL */
+.hobbies {
+    background-color: rgb(203, 203, 203);
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+}
+
+.hobbies h1 {
+    text-align: center;
+}
+
+.hobbies-row {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid;
+} .hobbies-row p {
+    text-align: left;
+    font-size: 15px;
+} .hobbies-row i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+/* FORM PANEL */
+.form {
+    padding: 40px;
+    background-color: #bebebe;
+    text-align: center;
+} .form form {
+    text-align: left;
+}
+
+.form-user {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.submit {
+    margin-top: 5px;
+    background-color: rgb(73, 217, 20);
 }
 
 /* FOOTER */
@@ -182,23 +233,6 @@ footer {
     color: #1DB954;
 } footer .spotify:hover {
     color: #189845;
-}
-
-.footer-container {
-    text-align: center;
-}
-
-/* HOBBIES PANEL */
-.hobbies h1 {
-    text-align: center;
-}
-
-.hobbies-row {
-    text-align: center;
-}
-
-.row-item {
-    border: 1px solid rgb(143, 143, 143);
 }
 
 /* MEDIA TAGS */
@@ -232,9 +266,16 @@ footer {
         width: 100%;
         height: auto;
     }
+
+    /* HOBBIES PANEL */
+    .hobbies {
+        max-width: fit-content;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
-@media screen and (max-width: 646px) {
+@media screen and (max-width: 787px) {
     /* INFO PANEL */
     nav h1 {
         margin-right: 0;
