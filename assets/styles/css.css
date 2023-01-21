@@ -271,6 +271,13 @@ footer {
         height: auto;
     }
 
+    .skills-left {
+        border-radius: 0;
+    }
+    .skills-right {
+        border-radius: 0;
+    }
+
     /* HOBBIES PANEL */
     .hobbies {
         max-width: fit-content;
@@ -328,5 +335,32 @@ footer {
     .skills-container {
         padding-left: 0px;
         padding-right: 0px;
+    }
+}
+
+/* ASSIGNMENT MEDIA TAGS */
+@media screen and (max-width: 900px) {
+    footer {
+        background-color: rgb(15, 101, 0);
+    }
+
+    .info-container {
+        color: rgb(255, 255, 255);
+        background-color: rgb(28, 28, 28);
+    } .info-container p {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(118, 118, 118);
+    }
+
+    .info-container {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    } .info-container p {
+        color: rgb(0, 0, 0);
     }
 }
