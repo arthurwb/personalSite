@@ -185,6 +185,10 @@ nav li a:hover {
     border-radius: 50px 50px 0 0;
 }
 
+.hobbies-header {
+    height: 4em;
+}
+
 .hobbies h1 {
     text-align: center;
 }
@@ -335,6 +339,11 @@ footer {
     .skills-container {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    /* HOBBIES PANEL */
+    .hobbies-header {
+        height: auto;
     }
 }
 
